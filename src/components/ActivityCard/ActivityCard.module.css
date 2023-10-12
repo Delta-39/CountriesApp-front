@@ -1,0 +1,40 @@
+.container{
+    height: 300px;
+    width: 350px;
+    background-color: #ffff;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.textInfo{
+    margin-top: 5px;
+}
+
+.spanInfo{
+    color: #8d8d8d;
+
+}
+
+.infoDiv{
+    margin-bottom: 10px;
+}
+
+.countryFlexCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.country{
+    padding: 10px;
+    background-color: #dadada;
+    font-size: 0.8rem;
+    border-radius: 15px;
+}

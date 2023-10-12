@@ -1,0 +1,62 @@
+.container{
+    width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.flagContainer{
+    width: 100%;
+    height: 160px;
+    background-color: red;
+}
+
+.flagContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textContainer{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
+}
+
+.textContainer h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.countryInfo{
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.countryInfo p {
+    padding-top: 5px;
+}
+
+.countryInfo p span{
+    color: #979797 ;
+}
+
+.button{
+    margin-left: 75px;
+    margin-bottom: 15px;
+    border-radius: 1rem;
+    border: none;
+    background-color: #dadada;
+    padding: 4px 20px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9rem;
+    transition: .3s ease;
+}
+
+.button:hover{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.603);
+}

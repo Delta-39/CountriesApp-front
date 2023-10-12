@@ -1,0 +1,57 @@
+.container{
+    height: 100%;
+    padding: 20px;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    grid-row-gap: 20px;
+}
+
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.paginationContainer{
+    margin: 0px 10px;
+}
+
+.paginationButton{
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-right: 5px;
+    background-color: #D9D9D9;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.activeButton{
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+
+.paginationButton:hover{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.603);
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+    }
+
+    .paginationContainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}

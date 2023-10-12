@@ -1,0 +1,11 @@
+.titleContainer{
+    height: 60px;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    padding-left: 15px;
+}

@@ -1,0 +1,80 @@
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("../../assets/img/background.png");
+    background-size: 280%;
+    animation: slideBackground 50s linear infinite;
+}
+
+.textContainer {
+    width: 80%;
+}
+
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10rem;
+    position: relative;
+    margin-left: 30px;
+}
+
+.span {
+    position: absolute;
+    left: 15px;
+    color: white;
+}
+
+.button {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    border-radius: 2.5rem;
+    background: #FFF;
+    box-shadow: -6px 11px 0px -1px #000;
+    padding: 10px 40px;
+    transition: .3s ease-in-out;
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .title{
+        font-size: 5.5rem;
+        margin-left: 5px;
+    }
+
+    .span{
+        left: 7px;
+        top: 0;
+    }
+
+    .button{
+        font-size: 1.9rem;
+    }
+
+    .container{
+        background-size: 380%;
+        animation: slideBackground 30s linear infinite;
+    }
+
+    .textContainer{
+        width: 100%;
+        margin-left: 60px;
+    }
+}
